@@ -1,0 +1,32 @@
+-- creating a student table with attributes.
+
+create table students(
+  id int auto_increament,
+  name varchar2(10),
+  age int,
+  gender char(2),
+  primary key (id)
+);
+
+--Inserting three rows of data into the table.
+
+insert into students values(1,'ranni',18,'F'),(2,'kumarni',20,'F'),
+(3,'madhu',20,'M');
+
+--retriving all rows from students table.
+
+select * from students;
+ 
+ 
+--updating the name of the student of id=2.
+ 
+update students
+set name='Janet' where id=2;
+ 
+--deleting the row with id=3 from students table.
+ 
+delete from students where id=3;
+ 
+--retriving all rows from students table.
+
+select * from students;
